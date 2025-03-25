@@ -126,5 +126,9 @@ python manage.py runserver
 
 
 # Commits
+## Final
+- Создание админки.
+- Создание API приложения.
+  
 ## Initial commit
-- инициализация репозитория Git
+- Инициализация репозитория Git.

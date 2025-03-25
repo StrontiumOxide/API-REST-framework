@@ -13,33 +13,34 @@ POST {{baseUrl}}/sensors/
 Content-Type: application/json
 
 {
-  "name": "ESP32",
-  "description": "Датчик на кухне за холодильником"
+  "name": "ESP45",
+  "description": "Датчик на балконе"
 }
 
 ###
 
 # обновление датчика
-PATCH {{baseUrl}}/sensors/1/
+PATCH {{baseUrl}}/sensors/
 Content-Type: application/json
 
 {
+  "id": 6,
   "description": "Перенес датчик на балкон"
 }
 
 ###
 
 # добавление измерения
-POST {{baseUrl}}/measurements/
+POST {{baseUrl}}/measurement/
 Content-Type: application/json
 
 {
-  "sensor": 1,
+  "id": 6,
   "temperature": 22.3
 }
 
 ###
 
 # получение информации по датчику
-GET {{baseUrl}}/sensors/1/
+GET {{baseUrl}}/sensors/
 Content-Type: application/json
